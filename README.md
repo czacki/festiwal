@@ -1,11 +1,5 @@
-# Gatsby Starter: Typescript + SASS
-Starter with the essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site. This setup includes:
+# oke
 
-- Typescript
-- Typescript linting
-- SASS support
+to zeby to wystartowac to trzeba miec [yarna](https://yarnpkg.com/) i sie robi w terminalu `yarn install` a potem `yarn dev` i siup na [localhoscie](localhost:8000) jest
 
-Install this starter by running this from your [Gatsby CLI](https://next.gatsbyjs.org/tutorial/part-zero/#install-the-gatsby-cli):
-```
-gatsby new gatsby-site https://github.com/tdharmon/gatsby-starter-typescript-sass
-```
+jak ktos robi zle to out

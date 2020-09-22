@@ -1,14 +1,13 @@
 {
-    "defaultSeverity": "error",
-    "extends": [
-        "tslint:recommended",
-        "tslint-react"
-    ],
-    "jsRules": {},
-    "rules": {
-      "quotemark": [true, "single", "jsx-double"],
-      "interface-name": [false],
-      "jsx-no-multiline-js": [false]
-    },
-    "rulesDirectory": []
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-react"],
+  "jsRules": {},
+  "rules": {
+    "quotemark": [true, "single"],
+    "interface-name": [false],
+    "jsx-no-multiline-js": [false],
+    "semicolon": [true, "never"],
+    "object-literal-sort-keys": false
+  },
+  "rulesDirectory": []
 }
