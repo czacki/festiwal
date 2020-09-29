@@ -9,7 +9,7 @@
   "arrowParens": "avoid",
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
-  "printWidth": 160,
+  "printWidth": 120,
   "endOfLine": "lf",
   "htmlWhitespaceSensitivity": "css",
   "proseWrap": "preserve",

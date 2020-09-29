@@ -7,7 +7,9 @@
     "interface-name": [false],
     "jsx-no-multiline-js": [false],
     "semicolon": [true, "never"],
-    "object-literal-sort-keys": false
+    "object-literal-sort-keys": false,
+    "trailing-comma": [true, { "esSpecCompliant": true }],
+    "jsx-no-lambda": false
   },
   "rulesDirectory": []
 }
