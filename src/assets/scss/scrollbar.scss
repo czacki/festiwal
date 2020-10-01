@@ -38,11 +38,11 @@
         height: 0.75rem;
         background: $text;
       }
-
-      span {
-        align-self: center;
-        line-height: 1rem;
-      }
     }
   }
+}
+
+.scrollbar-label {
+  align-self: center;
+  line-height: 1rem;
 }

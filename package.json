@@ -1,29 +1,39 @@
 {
-  "name": "gatsby-starter-typescript-sass",
-  "description": "Gatsby typescript sass starter",
-  "license": "MIT",
-  "version": "1.1.3",
-  "scripts": {
-    "start": "gatsby develop",
-    "dev": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve"
-  },
+  "name": "festiwal-forever",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@babel/core": "^7.5.5",
-    "gatsby": "^2.13.28",
-    "gatsby-plugin-sass": "^2.1.3",
-    "gatsby-plugin-typescript": "^2.1.2",
-    "node-sass": "^4.13.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "typescript": "^3.5.3",
-    "webpack": "^4.36.1"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-scroll": "^1.8.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "react-scroll": "^1.8.1",
+    "typescript": "~3.7.2"
   },
-  "devDependencies": {
-    "gatsby-plugin-tslint": "^0.0.2",
-    "tslint": "^5.18.0",
-    "tslint-loader": "^3.5.4",
-    "tslint-react": "^4.0.0"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link as ScrollLink } from 'react-scroll'
 
 import '../assets/scss/scrollbar.scss'
 
@@ -7,7 +8,7 @@ interface ScrollbarProps {
 }
 
 export default function Scrollbar({ sections }: ScrollbarProps) {
-  const [active, setActive] = React.useState(0)
+  const [active, setActive] = React.useState(0) //eslint-disable-line
 
   React.useEffect(() => {
     window.addEventListener('scroll', ((win: Window, ev: Event) => {
@@ -18,18 +19,27 @@ export default function Scrollbar({ sections }: ScrollbarProps) {
   return (
     <div className='scrollbar'>
       <ul>
-        {Object.keys(sections).map((section, i) => {
+        {sections.map((section, i) => {
           return (
             <li
               key={i}
-              onClick={() => window.scrollTo(0, window.innerHeight * i)}
+              onClick={() => window.scroll({ top: window.innerHeight * i, behavior: 'smooth' })}
               className={
                 window.scrollY >= window.innerHeight * (i - 1 / 2) && window.scrollY <= window.innerHeight * (i + 1 / 2)
                   ? 'active'
                   : ''
               }
             >
-              <span>{sections[i]}</span>
+              <ScrollLink
+                className='scrollbar-label'
+                activeClass='active'
+                to={section.toLowerCase()}
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                {section}
+              </ScrollLink>
             </li>
           )
         })}

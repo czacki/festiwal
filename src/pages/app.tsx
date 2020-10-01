@@ -4,7 +4,7 @@ import { Scrollbar } from '../components'
 
 import '../assets/scss/home.scss'
 
-export default function Index() {
+export default function App() {
   const sections = ['', 'Program']
 
   return (
