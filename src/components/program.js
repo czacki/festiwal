@@ -1,6 +1,14 @@
 //"jak coś jest głupie, ale działa, to nie jest głupie" + jeszcze tak dobrze nie ogarniam Reacta xd
 import React, {useState, useEffect} from 'react'
-let data=require("./sztuki")
+let data
+try
+{
+  data=require("./sztuki")
+}
+catch(e)
+{
+  data={"start": [2020, 11, 2], "days": ["Środa", "Czwartek", "Piątek", "Sobota"], "sztuki": []}
+}
 let festiwalStart=new Date(...data.start).getTime()
 let dayMs=3600*24*1000
 export default function Program()
