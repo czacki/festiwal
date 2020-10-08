@@ -1,5 +1,9 @@
 # oke
 
-to zeby to wystartowac to trzeba miec [yarna](https://yarnpkg.com/) i sie robi w terminalu `yarn install` a potem `yarn start` i siup na [localhoscie](localhost:3000) jest
+to zeby to wystartowac to trzeba miec [yarna](https://yarnpkg.com/getting-started/install) i sie robi w terminalu `yarn` i `cd client && yarn && cd ..` a potem `yarn dev` i siup na [localhoscie](localhost:3000)
 
-jak ktos robi zle to out
+jak pullujecie to czytajcie readme bo bede updatowal
+
+a i jezeli jeszcze nie macie to zrobcie `npm i -g nodemon ts-node` po instalce yarna
+
+a jak chcecie sie bawic w bilety to tez musicie miec MojaSZKOLA
