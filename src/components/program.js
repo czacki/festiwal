@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 let data
 try
 {
-  data=require("./sztuki")
+  data=require("../assets/sztuki")
 }
 catch(e)
 {
@@ -36,10 +36,7 @@ export default function Program()
     now=new Date()
     setTimeout(updateDay, (new Date().setHours(24, 0, 0, 0)-new Date()))
   }
-  useEffect(()=>
-  {
-    updateDay()
-  }, [])//sory za warning
+  useEffect(updateDay, [])
 
   //czy aktualizować automatycznie jak się zmieni dzień?
 
@@ -93,14 +90,14 @@ export default function Program()
       {
         days.map((d, i)=>
         (
-          <div key={d} className={i===day ? "active" : null} onClick={()=>setDay(i)}>{d}</div>
+          <div key={d} className={i===day ? "activeDay" : null} onClick={()=>setDay(i)}>{d}</div>
         ))
       }
       <table>
         <tbody>
           <tr>
             <th>Godzina</th>
-            <th>Nazwa</th>
+            <th>Sztuka</th>
             <th>Klasa</th>
           </tr>
           {
@@ -110,7 +107,6 @@ export default function Program()
                 <td>{s.oclock}</td>
                 <td>{s.name}</td>
                 <td>{s.class}</td>
-                <td>{s.timestamp}</td>
               </tr>
             ))
           }
