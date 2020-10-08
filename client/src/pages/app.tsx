@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Scrollbar } from '../components'
+import { Scrollbar, Program } from '../components'
 
 import '../assets/scss/home.scss'
 
@@ -22,7 +22,7 @@ export default function App() {
       </div>
 
       <div className='fullscreen center' id={sections[1].toLowerCase()}>
-        Program
+        <Program/>
       </div>
     </>
   )
